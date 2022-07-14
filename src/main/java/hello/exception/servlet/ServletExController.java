@@ -18,7 +18,7 @@ public class ServletExController {
 
     @GetMapping("/error-404")
     public void error404(HttpServletResponse response) throws IOException {
-        response.sendError(404, "404 오류!"); //서블릿 컨테이너에게 400 오류 발생 전달
+        response.sendError(404, "404 오류!"); //서블릿 컨테이너에게 404 오류 발생 전달
     }
 
     @GetMapping("/error-500")
